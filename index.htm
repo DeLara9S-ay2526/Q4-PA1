@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+    <div class="container col-md-4 mt-5 text-light bg-secondary rounded">
+        <h2 class="text-center">Voter's Verification</h2>
+        <form>
+            <label for="age">Enter Age:</label>
+            <input type="number" id="age" min="0" placeholder="e.g. 18">
+            <p id="status">Status: </p>
+            <button class="btn btn-primary" type="button" onclick="verifyEligibility()">Verify</button>
+            <button class="btn btn-danger" type="button" onclick="window.location.reload()">Refresh</button>
+        </form>
+        <hr>
+        <h2 class="text-center">Verify Grade</h2>
+        <form>
+            <label for="grade">Enter Age:</label>
+            <input type="number" id="grade" min="0" max="100" placeholder="e.g. 90">
+            <p id="status-grade">Status: </p>
+            <button class="btn btn-primary" type="button" onclick="verifyGrade()">Verify</button>
+            <button class="btn btn-danger" type="button" onclick="window.location.reload()">Refresh</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
